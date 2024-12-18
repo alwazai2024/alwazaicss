@@ -278,3 +278,12 @@
     font-weight: bold;
     border-radius: 5px;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; /* لمتصفحات WebKit مثل Chrome وSafari */
+}
+
+input[type="date"] {
+    -webkit-appearance: none; /* تعطيل مظهر الحقل الافتراضي في Chrome/Safari */
+    -moz-appearance: none; /* تعطيل مظهر الحقل الافتراضي في Firefox */
+    appearance: none; /* تعطيل المظهر الافتراضي في المتصفحات الأخرى */
+}
